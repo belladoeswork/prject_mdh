@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en" class="h-100">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact | Provider </title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/vanillajs-datepicker@1.2.0/dist/css/datepicker-bs5.min.css">
+    <link rel="stylesheet" href="css/styles.com">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy" crossorigin="anonymous"></script>
+        
+</head>
+
+<body class="d-flex flex-column h-100">
+    <main class="flex-shrink-0">
+
+        <!-- Nav bar start -->
+        <div class="container-fluid">
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+                <div class="container px-5">
+                    <a class="navbar-brand mb-0 h1" href="home.html">Labmate</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link" href="home.html">Home</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" aria-current="page" href="#" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">Login</a>
+                                <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
+                                    <li><a class="dropdown-item" href="login.html">Patient</a></li>
+                                    <li><a class="dropdown-item" href="#">Provider</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                            <li class="nav-item"><a class="nav-link" href="find_lab.html">Find a lab</a></li>
+                            <li class="nav-item"><a class="nav-link" href="help.html">Help</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+
+        <!-- Form start -->
+        <section class="py-5">
+            <div class="container px-5">
+                <div class="bg-light rounded-3 py-5 px-4 px-md-5 mb-5">
+                    <div class="text-center mb-5">
+                        <div class="btn bg-primary bg-gradient text-white rounded-3 mb-3"><i class="bi bi-envelope"></i></div>
+                            <h1 class="fw-bolder">Get in touch</h1>
+                            <p class="lead fw-normal text-muted mb-0">We'd love to hear from you</p>
+                        </div>
+                        <div class="row gx-5 justify-content-center">
+                            <div class="row">
+                                <div class="col-md-12 mb-4">
+                                    <div class="form-outline">
+                                        <label class="fw-bold" for="orgname">What is the name of your organization, practice, or business?</label>
+                                        <input type="text" class="form-control" name="orgname" id="orgname" autocomplete="off" required>
+                                    </div>
+                                </div>
+                                <div class="col-md-12 mb-4">
+                                    <div class="form-outline">
+                                        <label class="fw-bold" for="fit">Please select the option that best fits your organization:</label>
+                                        <select id="form3Example3" class="form-select" name="fit" required >
+                                            <option selected>- Please Select -</option>
+                                            <option>Clinic</option>
+                                            <option>Health System</option>
+                                            <option>Hospital</option>
+                                            <option>Primary Care</option>
+                                            <option>Specialty Care</option>
+                                            <option>Insurance</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-md-12 mb-4">
+                                    <div class="form-outline">
+                                        <label class="fw-bold" for="specialty">What is your organization's Primary Specialty?</label>
+                                        <input type="text" class="form-control" name="specialty" id="specialty" autocomplete="off" required>
+                                    </div>
+                                </div>
+                                <div class="col-md-12 mb-4">
+                                    <div class="form-outline">
+                                        <label class="fw-bold" for="role">Please provide your title/role within your organization:</label>
+                                        <input type="text" class="form-control" name="role" id="role" autocomplete="off" required>
+                                    </div>
+                                </div>
+                                <div class="col-md-12 mb-4">
+                                    <div class="form-outline">
+                                        <label class="fw-bold" for="name">Full Name</label>
+                                        <input type="text" class="form-control" name="name" id="name" autocomplete="off" required>
+                                    </div>
+                                </div>
+                                <div class="col-md-12 mb-4">
+                                    <div class="form-outline">
+                                        <label class="fw-bold" for="email">Email Address</label>
+                                        <input type="email" class="form-control" name="email" id="email" autocomplete="off" required>
+                                    </div>
+                                </div>
+                                <div class="col-md-12 mb-4">
+                                    <label for="inputcountry" class="fw-bold form-label">Country</label>
+                                    <select type="text" id="form3Example3" class="form-control" name="country" required >
+                                        <option selected>- Please Select -</option> 
+                                        <option>Germany</option>
+                                    </select>
+                                </div>
+                                <div class="col-md-6 mb-4">
+                                    <label for="inputState" class="fw-bold form-label">State or Province</label>
+                                    <select id="form3Example3" class="form-select" name="state" required >
+                                        <option selected>Choose...</option>
+                                        <option>BW</option>
+                                        <option>BY</option>
+                                        <option>BE</option>
+                                        <option>BB</option>
+                                        <option>HB</option>
+                                        <option>HH</option>
+                                        <option>HE</option>
+                                        <option>NI</option>
+                                        <option>MV</option>
+                                        <option>NW</option>
+                                        <option>RP</option>
+                                        <option>SL</option>
+                                        <option>SN</option>
+                                        <option>ST</option>
+                                        <option>SH</option>
+                                        <option>TH</option>
+                                    </select>
+                                </div>
+                                <div class="col-md-6 mb-4">
+                                    <label for="inputZip" class="fw-bold form-label">Zip or Postal Code</label>
+                                    <input type="text" id="form3Example3" class="form-control" name="zip" required />
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-4 mb-4">
+                                        <div class="form-outline">
+                                            <label class="fw-bold" for="phone">Phone Number</label>
+                                            <input type="phone" id="form3Example3" class="form-control" name="phone" autocomplete="off" required/>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-12 mb-4">
+                                    <div class="form-outline">
+                                        <label class="fw-bold" for="comment">Please provide a comment or question we might address with our reply:</label>
+                                        <input type="email" class="form-control" name="comment" id="comment" autocomplete="off" required>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-4 mb-4">
+                                    <button type="submit" class="btn btn-primary btn-lg btn-block mb-4">
+                                        Submit
+                                    </button>
+                                </div>
+                        
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+                     
+    
+
+        <!-- Footer start -->
+        <footer class="bg-dark py-4 ">
+            <div class="container px-5">
+                <div class="row align-items-center justify-content-between flex-column flex-sm-row">
+                    <div class="col-auto"><div class="small m-0 text-white">Copyright &copy; Labmate 2022</div></div>
+                        <div class="col-auto">
+                            <a class="btn btn-link text-white-50" href="about.html">About</a>
+                            <a class="btn btn-link text-white-50" href="find_lab.html">Find a lab</a>
+                            <a class="btn btn-link text-white-50" href="resources.html">Resources</a>
+                            <a class="btn btn-link text-white-50" href="help.html">Help</a>
+                        </div>
+                        <div class="col-auto">
+                            <a class="link-light small" href="#!">Privacy</a>
+                            <span class="text-white mx-1">&middot;</span>
+                            <a class="link-light small" href="#!">Terms</a>
+                            <span class="text-white mx-1">&middot;</span>
+                            <a class="link-light small" href="contact.html">Contact</a>
+                        </div>
+                    </div>
+                </div>	
+            </div>
+        </footer>
+
+    </main>
+
+
+</body>
+</html>

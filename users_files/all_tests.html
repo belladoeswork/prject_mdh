@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en" class="h-100">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Browse tests</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/vanillajs-datepicker@1.2.0/dist/css/datepicker-bs5.min.css">
+    <link rel="stylesheet" href="css/styles.com">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy" crossorigin="anonymous"></script>
+        
+</head>
+
+<body class="d-flex flex-column h-100">
+    <main class="flex-shrink-0">
+
+        <!-- Nav bar start -->
+        <div class="container-fluid">
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+                <div class="container px-5">
+                    <a class="navbar-brand mb-0 h1" href="login.html">Labmate | Patient</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link" href="home.html">Home</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" aria-current="page" href="#" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">Login / Sign Up</a>
+                                <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
+                                    <li><a class="dropdown-item" href="login.html">Login</a></li>
+                                    <li><a class="dropdown-item" href="signup.html">Sign Up</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item"><a class="nav-link" href="find_lab.html">Find a lab</a></li>
+                            <li class="nav-item"><a class="nav-link" href="help.html">Help</a></li>
+                        </ul>
+                        <form class="d-flex">
+                            <button class="btn btn-outline-light" type="submit">
+                                <i class="bi-cart-fill me-1"></i>
+                                Cart
+                                <span class="badge bg-light text-black ms-1 rounded-pill">0</span>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </nav>
+        </div>
+
+        <!-- Header section -->
+
+        <header class="py-5">
+            <div class="container px-5 px-lg-5 my-5">
+                <div class="text-center">
+                    <h1 class="display-4 fw-bolder">All Tests</h1>
+                    <p class="lead fw-normal text-50 mb-0">Purchase your own lab tests online and receive trusted, confidential results.</p>
+                </div>
+            </div>
+        </header>
+
+        <div class="container px-4 px-lg-5">
+
+            <!-- Search Start -->
+
+            <div class="col-lg-8 py-4 bg-primary wow fadeIn" data-wow-delay="0.1s" style="padding: 35px;">
+                <div class=" container-fluid">
+                    <form class="row row-cols-lg-auto g-3"></form>
+                    <div class="row g-3">
+                        <div class="col-sm-4">
+                            <input type="text" class="form-control border-0 py-2 " placeholder="Search">
+                        </div>
+
+                        <div class="col-sm-4">
+                            <select class="form-select border-0 py-2">
+                                <option selected>- All Tests -</option>
+                                <option value="1">Complete Blood Count (CBC)</option>
+                                <option value="2">Complete Blood Count (Package) </option>
+                                <option value="3" disabled>Women's Health Blood Test</option>
+                                <option value="4" disabled>Men's Health Blood Test</option>
+                                <option value="5" disabled>General Health Blood Test</option> 
+                                <option value="6" disabled>Comprehensive Wellness Blood Test</option>
+                                <option value="7" disabled>Vitamin Deficiency Blood Test</option>
+                                <option value="8" disabled>Anemia Blood Test</option>
+                                <option value="9" disabled>Liver Health Blood Test</option>
+                                <option value="10" disabled>Thyroid Health Blood Test</option>
+                                <option value="11" disabled>Calcium Blood Test </option>
+                            </select>
+                        </div>
+                        <div class="col-auto">
+                            <a class="btn btn-outline-light btn-lg py-1 px-5 " href="#!">Search</a>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+
+            <!-- Section Row-->
+            <section class="py-5">
+                
+                <div class="container px-4 px-lg-5 mt-5">
+                    <div class="row gx-4 gx-lg-5 row-cols-2 row-cols-md-3 row-cols-xl-4 justify-content-center">
+                        <div class="col mb-5">
+                            <div class="card h-100">
+                                <!-- Product image-->
+                                <img class="card-img-top" src="img/lab-g2a0ed061f_1920.jpg" alt="..." />
+                                <!-- Product details-->
+                                <div class="card-body p-4">
+                                    <div class="text-center">
+                                        <!-- Product name-->
+                                        <h5 class="fw-bolder">Complete Blood Count (CBC)</h5>
+                                        <p>For a clear view of your health.</p>
+                                        <!-- Product price-->
+                                        €151
+                                    </div>
+                                </div>
+                                <!-- Product actions-->
+                                <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                                    <div class="text-center"><a class="btn btn-primary mt-auto" href="cbctest.html">Select</a></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col mb-5">
+                            <div class="card h-100">
+                                <!-- Package badge-->
+                                <div class="badge bg-dark text-white position-absolute" style="top: 0.5rem; right: 0.5rem">Package</div>
+                                <!-- Product image-->
+                                <img class="card-img-top" src="img/lab-g2a0ed061f_1920.jpg" alt="..." />
+                                <!-- Product details-->
+                                <div class="card-body p-4">
+                                    <div class="text-center">
+                                        <!-- Product name-->
+                                        <h5 class="fw-bolder">Complete Blood Count (Package)</h5>
+                                        <p>Same CBC test, but packaged (4 tests) to last a cyle at an affordable pricing.</p>
+                                        <!-- Product price-->
+                                        <span class="text-muted text-decoration-line-through">$604.00</span>
+                                        €350
+                                    </div>
+                                </div>
+                                <!-- Product actions-->
+                                <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                                    <div class="text-center"><a class="btn btn-primary mt-auto" href="package.html">Select</a></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col mb-5">
+                            <div class="card h-100">
+                                <!-- Coming soon badge-->
+                                <div class="badge bg-dark text-white position-absolute" style="top: 0.5rem; right: 0.5rem">Coming soon</div>
+                                <!-- Product image-->
+                                <img class="card-img-top" src="img/woman-gfb862b22a_1920.jpg" alt="..." />
+                                <!-- Product details-->
+                                <div class="card-body p-4">
+                                    <div class="text-center">
+                                        <!-- Product name-->
+                                        <h5 class="fw-bolder">Women's Health Blood Test</h5>
+                                        <!-- Product price-->
+                                        €€
+                                    </div>
+                                </div>
+                                <!-- Product actions-->
+                                <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                                    <div class="text-center"><a class="btn btn-light mt-auto" >Coming soon</a></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col mb-5">
+                            <div class="card h-100">
+                                <!-- Coming soon badge-->
+                                <div class="badge bg-dark text-white position-absolute" style="top: 0.5rem; right: 0.5rem">Coming soon</div>
+                                <!-- Product image-->
+                                <img class="card-img-top" src="img/asian-cuisine-ge429aa712_1920.jpg" alt="..." />
+                                <!-- Product details-->
+                                <div class="card-body p-4">
+                                    <div class="text-center">
+                                        <!-- Product name-->
+                                        <h5 class="fw-bolder">Men's Health Blood Test</h5>
+                                        <!-- Product price-->
+                                        €€
+                                    </div>
+                                </div>
+                                <!-- Product actions-->
+                                <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                                    <div class="text-center"><a class="btn btn-light mt-auto" >Coming soon</a></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col mb-5">
+                            <div class="card h-100">
+                                <!-- Coming soon badge-->
+                                <div class="badge bg-dark text-white position-absolute" style="top: 0.5rem; right: 0.5rem">Coming soon</div>
+                                <!-- Product image-->
+                                <img class="card-img-top" src="img/elderly-g1415885ce_1920.jpg" alt="..." />
+                                <!-- Product details-->
+                                <div class="card-body p-4">
+                                    <div class="text-center">
+                                        <!-- Product name-->
+                                        <h5 class="fw-bolder">General Health Blood Test</h5>
+                                        <!-- Product price-->
+                                        €€
+                                    </div>
+                                </div>
+                                <!-- Product actions-->
+                                <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                                    <div class="text-center"><a class="btn btn-light mt-auto" >Coming soon</a></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col mb-5">
+                            <div class="card h-100">
+                                <!-- Coming soon badge-->
+                                <div class="badge bg-dark text-white position-absolute" style="top: 0.5rem; right: 0.5rem">Coming soon</div>
+                                <!-- Product image-->
+                                <img class="card-img-top" src="img/hospice-g05a786595_1920.jpg" alt="..." />
+                                <!-- Product details-->
+                                <div class="card-body p-4">
+                                    <div class="text-center">
+                                        <!-- Product name-->
+                                        <h5 class="fw-bolder">Comprehensive Wellness Blood Test</h5>
+                                        <!-- Product price-->
+                                        €€
+                                    </div>
+                                </div>
+                                <!-- Product actions-->
+                                <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                                    <div class="text-center"><a class="btn btn-light mt-auto" >Coming soon</a></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col mb-5">
+                            <div class="card h-100">
+                                <!-- Coming soon badge-->
+                                <div class="badge bg-dark text-white position-absolute" style="top: 0.5rem; right: 0.5rem">Coming soon</div>
+                                <!-- Product image-->
+                                <img class="card-img-top" src="img/legs-g466272a58_1920.jpg" alt="..." />
+                                <!-- Product details-->
+                                <div class="card-body p-4">
+                                    <div class="text-center">
+                                        <!-- Product name-->
+                                        <h5 class="fw-bolder">Vitamin Deficiency Blood Test</h5>
+                                        <!-- Product price-->
+                                        €€
+                                    </div>
+                                </div>
+                                <!-- Product actions-->
+                                <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                                    <div class="text-center"><a class="btn btn-light mt-auto" >Coming soon</a></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col mb-5">
+                            <div class="card h-100">
+                                <!-- Coming soon badge-->
+                                <div class="badge bg-dark text-white position-absolute" style="top: 0.5rem; right: 0.5rem">Coming soon</div>
+                                <!-- Product image-->
+                                <img class="card-img-top" src="img/hd-wallpaper-ga9a0bcf4b_1920.jpg" alt="..." />
+                                <!-- Product details-->
+                                <div class="card-body p-4">
+                                    <div class="text-center">
+                                        <!-- Product name-->
+                                        <h5 class="fw-bolder">Anemia Blood Test</h5>
+                                        <!-- Product price-->
+                                        €€
+                                    </div>
+                                </div>
+                                <!-- Product actions-->
+                                <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                                    <div class="text-center"><a class="btn btn-light mt-auto" >Coming soon</a></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col mb-5">
+                            <div class="card h-100">
+                                <!-- Coming soon badge-->
+                                <div class="badge bg-dark text-white position-absolute" style="top: 0.5rem; right: 0.5rem">Coming soon</div>
+                                <!-- Product image-->
+                                <img class="card-img-top" src="img/slimming-gf103d5bfe_1920.jpg" alt="..." />
+                                <!-- Product details-->
+                                <div class="card-body p-4">
+                                    <div class="text-center">
+                                        <!-- Product name-->
+                                        <h5 class="fw-bolder">Liver Health Blood Test</h5>
+                                        <!-- Product price-->
+                                        €€
+                                    </div>
+                                </div>
+                                <!-- Product actions-->
+                                <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                                    <div class="text-center"><a class="btn btn-light mt-auto" >Coming soon</a></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col mb-5">
+                            <div class="card h-100">
+                                <!-- Coming soon badge-->
+                                <div class="badge bg-dark text-white position-absolute" style="top: 0.5rem; right: 0.5rem">Coming soon</div>
+                                <!-- Product image-->
+                                <img class="card-img-top" src="img/granny-g85594b1bf_1920.jpg" alt="..." />
+                                <!-- Product details-->
+                                <div class="card-body p-4">
+                                    <div class="text-center">
+                                        <!-- Product name-->
+                                        <h5 class="fw-bolder">Thyroid Health Blood Test</h5>
+                                        <!-- Product price-->
+                                        €€
+                                    </div>
+                                </div>
+                                <!-- Product actions-->
+                                <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                                    <div class="text-center"><a class="btn btn-light mt-auto" >Coming soon</a></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col mb-5">
+                            <div class="card h-100">
+                                <!-- Coming soon badge-->
+                                <div class="badge bg-dark text-white position-absolute" style="top: 0.5rem; right: 0.5rem">Coming soon</div>
+                                <!-- Product image-->
+                                <img class="card-img-top" src="img/dependent-g226e28109_1280.jpg" alt="..." />
+                                <!-- Product details-->
+                                <div class="card-body p-4">
+                                    <div class="text-center">
+                                        <!-- Product name-->
+                                        <h5 class="fw-bolder">Calcium Blood Test</h5>
+                                        <!-- Product price-->
+                                        €€
+                                    </div>
+                                </div>
+                                <!-- Product actions-->
+                                <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                                    <div class="text-center"><a class="btn btn-light mt-auto" >Coming soon</a></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <!-- Footer start -->
+        <footer class="bg-dark py-4 ">
+            <div class="container px-5">
+                <div class="row align-items-center justify-content-between flex-column flex-sm-row">
+                    <div class="col-auto"><div class="small m-0 text-white">Copyright &copy; Labmate 2022</div></div>
+                        <div class="col-auto">
+                            <a class="btn btn-link text-white-50" href="about.html">About</a>
+                            <a class="btn btn-link text-white-50" href="find_lab.html">Find a lab</a>
+                            <a class="btn btn-link text-white-50" href="resources.html">Resources</a>
+                            <a class="btn btn-link text-white-50" href="help.html">Help</a>
+                        </div>
+                        <div class="col-auto">
+                            <a class="link-light small" href="#!">Privacy</a>
+                            <span class="text-white mx-1">&middot;</span>
+                            <a class="link-light small" href="#!">Terms</a>
+                            <span class="text-white mx-1">&middot;</span>
+                            <a class="link-light small" href="contact.html">Contact</a>
+                        </div>
+                    </div>
+                </div>	
+            </div>
+        </footer>
+
+    </main>
+    
+</body>
+</html>
